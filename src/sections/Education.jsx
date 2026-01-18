@@ -21,8 +21,8 @@ const Education = () => {
       id: 1,
       degree: 'Cybersecurity',
       institution: 'Arizona State University',
-      status: 'Current',
-      year: '2024 - Present',
+      status: 'Completed',
+      year: '2024',
     },
     {
       id: 2,
@@ -196,14 +196,6 @@ const Education = () => {
                   <p className="text-sm text-gray-500 font-mono">{edu.year}</p>
                 </div>
               ))}
-              
-              {/* In Progress */}
-              <div className="bg-dark-surface p-6 rounded-lg border border-dark-accent border-accent-primary/30">
-                <h4 className="text-lg font-semibold text-gray-300 mb-2">
-                  Currently Working Toward
-                </h4>
-                <p className="text-accent-primary font-semibold">CompTIA Security+ Certification</p>
-              </div>
             </div>
           </div>
 
