@@ -2,6 +2,14 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+// Import project images
+import dineCollegeImage from '../assets/projects/cropped-dc_logoFooter.png'
+import securityTrophyImage from '../assets/projects/Security-Trophy.png'
+import networkingTrophyImage from '../assets/projects/Networking-Trophy.png'
+import databaseTrophyImage from '../assets/projects/Database-Trophy.png'
+import campusMapImage from '../assets/projects/3d-Tsaile-Campus-Map.png'
+import aiScannerImage from '../assets/projects/AI-Project-Scanner-img.png'
+
 /**
  * Projects Section Component
  * 
@@ -15,9 +23,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 const Projects = () => {
   const sectionRef = useRef(null)
   const projectsRef = useRef(null)
-
-  // Import project images - Add your images to src/assets/projects/
-  // Example: import dineCollegeImage from '../assets/projects/dine-college.jpg'
   
   const projects = [
     {
@@ -27,7 +32,7 @@ const Projects = () => {
       tags: ['WordPress', 'Elementor Pro', 'Custom CSS/JS', 'Google Analytics', 'YOLOBox'],
       status: 'Production (2024-Present)',
       link: 'https://dinecollege.edu',
-      image: '/assets/projects/cropped-dc_logoFooter.png',
+      image: dineCollegeImage,
     },
     {
       id: 2,
@@ -36,7 +41,7 @@ const Projects = () => {
       tags: ['AWS', 'IAM', 'KMS', 'Secrets Manager', 'GuardDuty', 'CloudTrail', 'CloudWatch', 'SNS', 'DynamoDB', 'Python'],
       status: 'Complete',
       link: 'https://github.com/shanebrown848/AWS-cloud-security-portfolio',
-      image: '/assets/projects/Security-Trophy.png',
+      image: securityTrophyImage,
     },
     {
       id: 3,
@@ -45,7 +50,7 @@ const Projects = () => {
       tags: ['AWS', 'VPC', 'EC2', 'S3', 'CloudWatch', 'VPC Peering', 'VPC Endpoints', 'Security Groups', 'Network ACLs', 'CIDR'],
       status: 'Complete',
       link: 'https://github.com/shanebrown848/AWS-Networking-Projects-Portfolio',
-      image: '/assets/projects/Networking-Trophy.png',
+      image: networkingTrophyImage,
     },
     {
       id: 4,
@@ -54,7 +59,7 @@ const Projects = () => {
       tags: ['AWS', 'Aurora MySQL', 'DynamoDB', 'EC2', 'PHP', 'SQL', 'NoSQL', 'AWS CLI'],
       status: 'Complete',
       link: 'https://github.com/shanebrown848/AWS-databases-portfolio',
-      image: '/assets/projects/Database-Trophy.png',
+      image: databaseTrophyImage,
     },
     {
       id: 5,
@@ -63,7 +68,7 @@ const Projects = () => {
       tags: ['GSAP', 'Three.js', 'JavaScript', 'React'],
       status: 'In Progress',
       link: 'https://marketingteamdinecollege.com/',
-      image: '/assets/projects/3d-Tsaile-Campus-Map.png',
+      image: campusMapImage,
     },
     {
       id: 6,
@@ -72,7 +77,7 @@ const Projects = () => {
       tags: ['Gemini AI', 'Python', 'OpenAI API'],
       status: 'Active Development',
       link: 'https://github.com/shanebrown848/AI-Security-Scanner-with-Gemini',
-      image: '/assets/projects/AI-Project-Scanner-img.png',
+      image: aiScannerImage,
     },
     {
       id: 7,
@@ -80,6 +85,7 @@ const Projects = () => {
       description: 'Developed AI-powered SOC assistant for threat analysis. Created automated incident response workflows. Provides real-time security recommendations for network defense.',
       tags: ['OpenAI API', 'Python', 'SIEM'],
       status: 'Active Development',
+      // Using external URL as placeholder - replace with imported image when available
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop',
     },
     {
@@ -89,6 +95,7 @@ const Projects = () => {
       tags: ['WordPress', 'Custom Theme Development'],
       status: 'Active',
       link: 'https://theechoedmelodies.com',
+      // Using external URL as placeholder - replace with imported image when available
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
     },
     {
@@ -97,6 +104,7 @@ const Projects = () => {
       description: 'Building secure, fast websites for multiple clients including LW Safety, Alumni site rebuilds, Dre Creations, and Nest of Tucson. Focus on responsive design, performance optimization, and security best practices.',
       tags: ['WordPress', 'Elementor', 'React', 'JavaScript', 'Custom CSS/JS'],
       status: 'Ongoing',
+      // Using external URL as placeholder - replace with imported image when available
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
     },
     {
@@ -106,6 +114,7 @@ const Projects = () => {
       tags: ['Python', 'Docker', 'CI/CD'],
       status: 'Complete',
       link: 'https://github.com/shanebrown848/devops-capstone-project',
+      // Using external URL as placeholder - replace with imported image when available
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
     },
   ]
