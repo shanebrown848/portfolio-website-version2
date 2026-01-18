@@ -27,7 +27,7 @@ const Projects = () => {
       tags: ['WordPress', 'Elementor Pro', 'Custom CSS/JS', 'Google Analytics', 'YOLOBox'],
       status: 'Production (2024-Present)',
       link: 'https://dinecollege.edu',
-      image: '/src/assets/projects/cropped-dc_logoFooter.png',
+      image: '/assets/projects/cropped-dc_logoFooter.png',
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ const Projects = () => {
       tags: ['AWS', 'IAM', 'KMS', 'Secrets Manager', 'GuardDuty', 'CloudTrail', 'CloudWatch', 'SNS', 'DynamoDB', 'Python'],
       status: 'Complete',
       link: 'https://github.com/shanebrown848/AWS-cloud-security-portfolio',
-      image: '/src/assets/projects/Security-Trophy.png',
+      image: '/assets/projects/Security-Trophy.png',
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const Projects = () => {
       tags: ['AWS', 'VPC', 'EC2', 'S3', 'CloudWatch', 'VPC Peering', 'VPC Endpoints', 'Security Groups', 'Network ACLs', 'CIDR'],
       status: 'Complete',
       link: 'https://github.com/shanebrown848/AWS-Networking-Projects-Portfolio',
-      image: '/src/assets/projects/Networking-Trophy.png',
+      image: '/assets/projects/Networking-Trophy.png',
     },
     {
       id: 4,
@@ -54,7 +54,7 @@ const Projects = () => {
       tags: ['AWS', 'Aurora MySQL', 'DynamoDB', 'EC2', 'PHP', 'SQL', 'NoSQL', 'AWS CLI'],
       status: 'Complete',
       link: 'https://github.com/shanebrown848/AWS-databases-portfolio',
-      image: '/src/assets/projects/Database-Trophy.png',
+      image: '/assets/projects/Database-Trophy.png',
     },
     {
       id: 5,
@@ -63,7 +63,7 @@ const Projects = () => {
       tags: ['GSAP', 'Three.js', 'JavaScript', 'React'],
       status: 'In Progress',
       link: 'https://marketingteamdinecollege.com/',
-      image: '/src/assets/projects/3d-Tsaile-Campus-Map.png',
+      image: '/assets/projects/3d-Tsaile-Campus-Map.png',
     },
     {
       id: 6,
@@ -72,7 +72,7 @@ const Projects = () => {
       tags: ['Gemini AI', 'Python', 'OpenAI API'],
       status: 'Active Development',
       link: 'https://github.com/shanebrown848/AI-Security-Scanner-with-Gemini',
-      image: '/src/assets/projects/AI-Project-Scanner-img.png',
+      image: '/assets/projects/AI-Project-Scanner-img.png',
     },
     {
       id: 7,
