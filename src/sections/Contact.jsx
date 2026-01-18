@@ -297,7 +297,7 @@ const Contact = () => {
                 </p>
                 <p>
                   <a
-                    href="https://theechoedmelodies.com"
+                    href="https://theechoedmelodies.blog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-accent-primary hover:text-accent-primary/80 transition-colors"
