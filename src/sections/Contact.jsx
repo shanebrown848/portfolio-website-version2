@@ -95,19 +95,34 @@ const Contact = () => {
     setIsSubmitting(true)
     setSubmitStatus(null)
 
-    // Simulate API call - replace with actual endpoint
+    // Send form data to Web3Forms
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-      
-      // Here you would typically send the data to your backend
-      console.log('Form data:', formData)
-      
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', message: '' })
-      
-      // Reset status after 5 seconds
-      setTimeout(() => setSubmitStatus(null), 5000)
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: "009a6550-1504-40c1-a87c-7b1396fa0f2f",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', message: '' })
+        // Reset status after 5 seconds
+        setTimeout(() => setSubmitStatus(null), 5000)
+      } else {
+        throw new Error(result.message || 'Submission failed')
+      }
     } catch (error) {
+      console.error('Form submission error:', error)
       setSubmitStatus('error')
       setTimeout(() => setSubmitStatus(null), 5000)
     } finally {
