@@ -250,10 +250,10 @@ const Contact = () => {
               <div className="space-y-2 text-left">
                 <p>
                   <a
-                    href="mailto:shanebrown848@gmail.com"
+                    href="mailto:shanebrown@sinistergatedesigns.com"
                     className="text-accent-primary hover:text-accent-primary/80 transition-colors"
                   >
-                    shanebrown848@gmail.com
+                    shanebrown@sinistergatedesigns.com
                   </a>
                 </p>
                 <p>
