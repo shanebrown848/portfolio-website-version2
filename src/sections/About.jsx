@@ -97,7 +97,7 @@ const About = () => {
               I run Sinister Gate Designs LLC. I provide cybersecurity consulting and web development for clients who need both speed and security.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Currently studying Cybersecurity at Arizona State University. Working toward Security+ certification. Learning by building real projects that solve actual problems.
+              Graduated in Cybersecurity at Arizona State University. Learning by building real projects that solve actual problems.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
               Background: Former lead singer in a metal band during high school. 20+ years as an electrician across residential, commercial, and industrial projects. Worked in data centers, hospitals, semiconductor factories, and cleanrooms. Transitioned to tech through ASU's Cybersecurity Bootcamp in 2024.

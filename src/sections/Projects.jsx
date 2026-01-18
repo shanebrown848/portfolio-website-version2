@@ -27,7 +27,7 @@ const Projects = () => {
       tags: ['WordPress', 'Elementor Pro', 'Custom CSS/JS', 'Google Analytics', 'YOLOBox'],
       status: 'Production (2024-Present)',
       link: 'https://dinecollege.edu',
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop',
+      image: '/src/assets/projects/cropped-dc_logoFooter.png',
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ const Projects = () => {
       tags: ['AWS', 'IAM', 'KMS', 'Secrets Manager', 'GuardDuty', 'CloudTrail', 'CloudWatch', 'SNS', 'DynamoDB', 'Python'],
       status: 'Complete',
       link: 'https://github.com/shanebrown848/AWS-cloud-security-portfolio',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
+      image: '/src/assets/projects/Security-Trophy.png',
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const Projects = () => {
       tags: ['AWS', 'VPC', 'EC2', 'S3', 'CloudWatch', 'VPC Peering', 'VPC Endpoints', 'Security Groups', 'Network ACLs', 'CIDR'],
       status: 'Complete',
       link: 'https://github.com/shanebrown848/AWS-Networking-Projects-Portfolio',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
+      image: '/src/assets/projects/Networking-Trophy.png',
     },
     {
       id: 4,
@@ -54,7 +54,7 @@ const Projects = () => {
       tags: ['AWS', 'Aurora MySQL', 'DynamoDB', 'EC2', 'PHP', 'SQL', 'NoSQL', 'AWS CLI'],
       status: 'Complete',
       link: 'https://github.com/shanebrown848/AWS-databases-portfolio',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
+      image: '/src/assets/projects/Database-Trophy.png',
     },
     {
       id: 5,
@@ -62,8 +62,8 @@ const Projects = () => {
       description: 'Building 3D rendered campus maps for Diné College graduation event (December 12th). Creating interactive hotspots with clickable navigation. Collaborating with professional photographers and drone pilots for 3D assets. Implementing GSAP animations for smooth user interactions.',
       tags: ['GSAP', 'Three.js', 'JavaScript', 'React'],
       status: 'In Progress',
-      client: 'Diné College',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
+      link: 'https://marketingteamdinecollege.com/',
+      image: '/src/assets/projects/3d-Tsaile-Campus-Map.png',
     },
     {
       id: 6,
@@ -71,7 +71,8 @@ const Projects = () => {
       description: 'Built threat detection tool powered by Gemini AI. Automates vulnerability identification. Integrates security awareness into development workflow. Designed for small businesses needing automated security assessments.',
       tags: ['Gemini AI', 'Python', 'OpenAI API'],
       status: 'Active Development',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop',
+      link: 'https://github.com/shanebrown848/AI-Security-Scanner-with-Gemini',
+      image: '/src/assets/projects/AI-Project-Scanner-img.png',
     },
     {
       id: 7,

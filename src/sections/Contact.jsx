@@ -284,16 +284,7 @@ const Contact = () => {
                     GitHub
                   </a>
                 </p>
-                <p>
-                  <a
-                    href="https://shanesdesignstudio.tech"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-accent-primary hover:text-accent-primary/80 transition-colors"
-                  >
-                    Portfolio
-                  </a>
-                </p>
+           
                 <p>
                   <a
                     href="https://sinistergatedesigns.com"
