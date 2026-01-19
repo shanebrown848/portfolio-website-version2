@@ -22,19 +22,40 @@ const Hero = () => {
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
 
-    // Animate title with character stagger
-    const titleChars = titleRef.current?.textContent?.split('') || []
+    // Animate title with word stagger (preserving line breaks)
     if (titleRef.current) {
-      titleRef.current.innerHTML = titleChars
-        .map((char, i) => `<span class="inline-block" style="opacity: 0">${char === ' ' ? '&nbsp;' : char}</span>`)
-        .join('')
-      
-      gsap.to(titleRef.current.querySelectorAll('span'), {
-        opacity: 1,
-        duration: 0.5,
-        stagger: 0.03,
-        delay: 0.5,
-      })
+      const titleSpans = titleRef.current.querySelectorAll('span')
+      if (titleSpans.length > 0) {
+        // Animate each line separately
+        titleSpans.forEach((span, index) => {
+          const words = span.textContent.split(' ')
+          span.innerHTML = words
+            .map((word, i) => `<span class="inline-block" style="opacity: 0">${word}${i < words.length - 1 ? '&nbsp;' : ''}</span>`)
+            .join('')
+        })
+        
+        // Animate all word spans
+        const wordSpans = titleRef.current.querySelectorAll('span span')
+        gsap.to(wordSpans, {
+          opacity: 1,
+          duration: 0.5,
+          stagger: 0.05,
+          delay: 0.5,
+        })
+      } else {
+        // Fallback: character animation if structure is different
+        const titleChars = titleRef.current?.textContent?.split('') || []
+        titleRef.current.innerHTML = titleChars
+          .map((char, i) => `<span class="inline-block" style="opacity: 0">${char === ' ' ? '&nbsp;' : char}</span>`)
+          .join('')
+        
+        gsap.to(titleRef.current.querySelectorAll('span'), {
+          opacity: 1,
+          duration: 0.5,
+          stagger: 0.03,
+          delay: 0.5,
+        })
+      }
     }
 
     // Animate other elements
@@ -81,9 +102,10 @@ const Hero = () => {
         {/* Main Title with gradient */}
         <h1
           ref={titleRef}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
+          className="text-4xl md:text-7xl lg:text-7xl font-bold mb-6 leading-tight"
         >
-          Web Developer & Cybersecurity Specialist
+          <span className="block text-gradient">Web Developer &nbsp;&</span>
+          <span className="block text-gradient">Cybersecurity Specialist</span>
         </h1>
 
         {/* Description */}
